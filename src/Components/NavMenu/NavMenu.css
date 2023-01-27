@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Secular+One&display=swap');
+
+/* Nav Bar */
+.wrapper {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 1rem 1.5rem;
+}
+
+#title {
+  font-family: 'Secular One', sans-serif;
+  font-size: 2.25rem;
+  color: rgb(40, 40, 40);
+}
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(40, 40, 40);
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+.change .bar1 {
+  transform: translate(0, 11px) rotate(-45deg);
+  background-color: whitesmoke;
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  transform: translate(0, -11px) rotate(45deg);
+  background-color: whitesmoke;
+}
+
+.nav-links {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(0,0,0,0.9);
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  text-align: center;
+}
+
+.nav-links a {
+  padding: 25px 0px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #d5d4d4;
+  display: block;
+  transition: 0.3s;
+}
+
+li {
+  display: block;
+}
+
+.nav-links a:hover {
+  color: #f1f1f1;
+  cursor: pointer;
+}
+
+.open {
+  width: 100vw;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  .nav-links {
+    position: initial;
+    width: initial;
+    background-color: whitesmoke;
+    padding-top: initial;
+    transition: initial;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(35, 35, 35);
+    display: initial;
+    padding: 0 .25rem;
+  }
+
+  .nav-links a:hover {
+    display: inline-block;
+    color: initial;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+  }
+
+  .nav-links .closebtn {
+    position: initial;
+    display: none;
+  }
+}
