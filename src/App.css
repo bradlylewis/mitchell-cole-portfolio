@@ -1,0 +1,21 @@
+#app {
+    padding: 0 25px;
+}
+
+@media screen and (min-width: 600px) {
+    #app {
+        padding: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    #app {
+        padding: 0 10rem;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    #app {
+        padding: 0 20rem;
+    }
+}
