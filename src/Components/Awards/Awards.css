@@ -1,0 +1,29 @@
+#awards-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: black;
+    padding: 2.25rem 0;
+}
+
+@media screen and (min-width: 900px) {
+    #awards-container {
+        padding: 2.25rem 0;
+        flex-direction: row;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .award {
+        width: 80%;}
+}
+
+@media screen and (min-width: 1400px) {
+    #awards-container {
+        padding: 2.25rem 0;
+    }
+
+    .award {
+        width: 30%;}
+}

@@ -8,8 +8,11 @@ function App() {
     <div id="app">
       <NavMenu />
       <Routes>
-        <Route exact path='/' element={<Awards/>}/>
+        <Route exact path='/' element={<h1>Home Page</h1>}/>
+        <Route exact path='/portfolio' element={<h1>Portfolio</h1>}/>
         <Route path='/awards' element={<Awards />}/>
+        <Route exact path='/about' element={<h1>About Me</h1>}/>
+        <Route exact path='/contact' element={<h1>Contact</h1>}/>
       </Routes>
       <div id="content">
       </div>
