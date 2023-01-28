@@ -1,4 +1,5 @@
 import './NavMenu.css'
+import { Link } from 'react-router-dom'
 
 const NavMemnu = () => {
     function openSideMenu() {
@@ -12,10 +13,10 @@ const NavMemnu = () => {
     <div className="wrapper">  
         <div id="title">Mitchell Cole</div>
         <nav id="nav-links" className="nav-links">
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Awards</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><Link to="/portfolio" className="link">Portfolio</Link></li>
+            <li><Link to="/awards" className="link">Awards</Link></li>
+            <li><Link to="/about" className="link">About Me</Link></li>
+            <li><Link to="/contact" className="link">Contact</Link></li>
         </nav>
         <div className="container" onClick={()=>openSideMenu()}>
             <div className="bar1"></div>
