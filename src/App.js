@@ -1,7 +1,8 @@
-import './App.css';
-import { Route, Routes } from 'react-router-dom';
-import NavMenu from './Components/NavMenu/NavMenu'
 import Awards from './Components/Awards/Awards'
+import NavMenu from './Components/NavMenu/NavMenu'
+import About from './Components/About/About'
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <Route exact path='/' element={<h1>Home Page</h1>}/>
         <Route exact path='/portfolio' element={<h1>Portfolio</h1>}/>
         <Route path='/awards' element={<Awards />}/>
-        <Route exact path='/about' element={<h1>About Me</h1>}/>
+        <Route exact path='/about' element={<About />}/>
         <Route exact path='/contact' element={<h1>Contact</h1>}/>
       </Routes>
       <div id="content">
