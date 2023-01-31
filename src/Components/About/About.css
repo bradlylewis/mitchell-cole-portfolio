@@ -6,7 +6,7 @@
     padding: 2rem 2rem;
 }
 
-img {
+.mitchell-img {
     width: 100%;
     border: 1px solid #555;
 }
@@ -41,7 +41,7 @@ hr {
         gap: 2rem;
     }
 
-    img {
+    .mitchell-img {
         width: 40%;
     }
 
@@ -75,7 +75,7 @@ hr {
         height: 80vh;
     }
 
-    img {
+    .mitchell-img {
         width: 50%;
     }
 
@@ -94,7 +94,7 @@ hr {
 }
 
 @media screen and (min-width: 1550px) {
-    img {
+    .mitchell-img {
         width: 40%;
     }
 
@@ -108,7 +108,7 @@ hr {
 }
 
 @media screen and (min-width: 1750px) {
-    img {
+    .mitchell-img {
         width: 30%;
     }
 
